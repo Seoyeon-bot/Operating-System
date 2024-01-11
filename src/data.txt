@@ -1,0 +1,1 @@
+Hi this is sample data.txt. Use this file for fakefilesystem open() 
