@@ -1,3 +1,4 @@
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.TimerTask;
 
@@ -14,7 +15,7 @@ public class OS extends TimerTask implements Runnable {
    int deviceID; // store device id 
    int kindex;   // for klp array int
    
-   private static Random random = new Random(); 
+   private static Random random = new SecureRandom(); 
    KernalandProcess klp = new KernalandProcess(); 
    
   
