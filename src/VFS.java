@@ -75,7 +75,7 @@ public class VFS implements Device {
 		}
 					
 		// compare with founded id and string device name 
-		if (first_str.equalsIgnoreCase("random")) {
+		if ("random".equalsIgnoreCase(first_str)) {
 		
 			// open RandomDevice 
 			TypeOfDevice[specificID] = randomDevice; 
@@ -84,7 +84,7 @@ public class VFS implements Device {
 			dId[specificID] =  TypeOfDevice[specificID].Open(rest); // ex) 100 store in dId array. 
 			System.out.println("dId[specificID] : " + dId[specificID]); 
 		}
-		else if(first_str.equalsIgnoreCase("file")) {
+		else if("file".equalsIgnoreCase(first_str)) {
 			
 			// open fakefile system
 			TypeOfDevice[specificID] = fakeFileSystem; 
