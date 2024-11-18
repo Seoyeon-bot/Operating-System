@@ -1,4 +1,5 @@
 import java.lang.Thread.State;
+import java.security.SecureRandom;
 import java.time.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -544,7 +545,7 @@ public  void DeleteProcess(PriorityEnum priority, KernalandProcess kprocess) {
  */
 public static void pickNextProcess() {
 	
-	Random random = new Random();
+	Random random = new SecureRandom();
 	// TODO Auto-generated method stub
 	number = random.nextInt(9); //0 1 2 3 4 5 6 7 8 9
 	int number2; // get 0 1 2 3 
